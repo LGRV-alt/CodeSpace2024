@@ -1,0 +1,21 @@
+/* html {
+  background-color: black;
+} */
+
+.button-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* .button-wrapper > button {
+  background-color: green;
+  color: white;
+}
+
+.button-wrapper > button:hover {
+  background-color: red;
+  color: white;
+  cursor: pointer;
+} */
