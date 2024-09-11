@@ -1,6 +1,7 @@
-/* html {
+html {
   background-color: black;
-} */
+  color: white;
+}
 
 .button-wrapper {
   display: flex;
