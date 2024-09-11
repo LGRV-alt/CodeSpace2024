@@ -1,22 +1,68 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  overflow-x: hidden;
+}
+
+:root {
+  --main-color: #fff5e4;
+  --main-text: #6a9c89;
+}
+
 html {
-  background-color: black;
-  color: white;
+  background-color: var(--main-color);
+  color: black;
+}
+
+.player-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  color: var(--main-text);
+  color: black;
+  display: flex;
+  justify-content: center;
+  background-color: var(--main-color);
+  padding: 1rem;
+  margin-bottom: 1rem;
 }
 
 .button-wrapper {
   display: flex;
   width: 100%;
   justify-content: center;
-  gap: 10px;
+  align-items: center;
+  gap: 4rem;
 }
 
-/* .button-wrapper > button {
-  background-color: green;
+.button-wrapper > button {
+  width: 6rem;
+  height: 6rem;
+  cursor: pointer;
+  background-color: #cd5c08;
   color: white;
+  border: none;
+  border-radius: 50%;
 }
 
 .button-wrapper > button:hover {
-  background-color: red;
-  color: white;
-  cursor: pointer;
-} */
+  background-color: #e66a0a;
+}
+
+.display-options {
+  margin-bottom: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.display-options > h2 > span {
+  color: red;
+}
