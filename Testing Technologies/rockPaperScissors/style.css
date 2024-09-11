@@ -52,7 +52,9 @@ html {
 }
 
 .button-wrapper > button:hover {
-  background-color: #e66a0a;
+  background-color: #eba46f;
+  transition: all;
+  transition-duration: 500ms;
 }
 
 .display-options {
