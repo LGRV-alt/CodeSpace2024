@@ -21,5 +21,3 @@ let printOnly = () => console.log("printing");
 
 // Challenge 6 - Sum
 let sum = (num1, num2) => num1 + num2;
-
-console.log(sum(2, 8));
