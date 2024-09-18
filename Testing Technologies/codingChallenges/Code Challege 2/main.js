@@ -16,33 +16,92 @@
 // const user2 = new User("Jane", "Doe");
 // user2.hello();
 
-// Coding Task 2 - ENcapsulation
+// ----------------Coding Task 2 - Encapsulation -------------------
+
+// class User {
+//   constructor(firstName, lastName) {
+//     this._firstName = firstName;
+//     this._lastName = lastName;
+//   }
+
+//   get fullName() {
+//     return `My name is ${this._firstName} ${this._lastName}`;
+//   }
+
+//   set fullName(newName) {
+//     const splitName = newName.split(" ");
+//     this._firstName = splitName[0];
+//     this._lastName = splitName[1];
+//   }
+
+//   hello() {
+//     return "Hello World!";
+//   }
+// }
+
+// const user = new User();
+// user.fullName = "Stan Girvan";
+// console.log(user.hello());
+// console.log(user.fullName);
+
+// -------Coding Task 3 - Inheritance (Subclass and Superclass)--------
+
+// class User {
+//   constructor(username) {
+//     this._username = username;
+//   }
+
+//   set username(username) {
+//     this._username = username;
+//   }
+// }
+
+// class Admin extends User {
+//   expressYourRole() {
+//     return "Admin";
+//   }
+//   sayHello() {
+//     return `Hello admin, ${this._username}`;
+//   }
+// }
+
+// const admin = new Admin();
+// admin.username = "Balthazar";
+// console.log(admin.sayHello());
+
+// --------------Coding Task 4 - Polymorphism--------------------
 
 class User {
-  constructor(firstName, lastName) {
-    this._firstName = firstName;
-    this._lastName = lastName;
+  constructor() {
+    this._numberOfArticles = 0;
   }
 
-  get names() {
-    return `My name is ${this._firstName} ${this._lastName}`;
+  set numberOfArcitcles(numberOfArcitcles) {
+    this._numberOfArcitcles = numberOfArcitcles;
   }
 
-  set firstName(firstName) {
-    this._firstName = firstName;
+  get numberOfArcitcles() {
+    return this._numberOfArcitcles;
   }
+  calcScores() {}
+}
 
-  set lastName(lastName) {
-    this._lastName = lastName;
-  }
-
-  hello() {
-    return "Hello World!";
+class Author extends User {
+  calcScores() {
+    return this._numberOfArcitcles * 10 + 20;
   }
 }
 
-const user = new User();
-user.firstName = "Lewis";
-user.lastName = "Girvan";
-console.log(user.hello());
-console.log(user.names);
+class Editor extends User {
+  calcScores() {
+    return this._numberOfArcitcles * 6 + 15;
+  }
+}
+
+const author = new Author();
+author.numberOfArcitcles = 8;
+console.log(author.calcScores());
+
+const editor = new Editor();
+editor._numberOfArcitcles = 15;
+console.log(editor.calcScores());
