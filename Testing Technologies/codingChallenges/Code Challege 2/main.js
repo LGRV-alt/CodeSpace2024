@@ -46,62 +46,111 @@
 
 // -------Coding Task 3 - Inheritance (Subclass and Superclass)--------
 
-// class User {
-//   constructor(username) {
-//     this._username = username;
-//   }
+class User {
+  constructor(username) {
+    this._username = username;
+  }
 
-//   set username(username) {
-//     this._username = username;
-//   }
-// }
+  set username(username) {
+    this._username = username;
+  }
+}
 
-// class Admin extends User {
-//   expressYourRole() {
-//     return "Admin";
-//   }
-//   sayHello() {
-//     return `Hello admin, ${this._username}`;
-//   }
-// }
+class Admin extends User {
+  expressYourRole() {
+    return "Admin";
+  }
+  sayHello() {
+    return `Hello admin, ${this._username}`;
+  }
+}
 
-// const admin = new Admin();
-// admin.username = "Balthazar";
-// console.log(admin.sayHello());
+const admin = new Admin();
+admin.username = "Balthazar";
+console.log(admin.sayHello());
 
 // --------------Coding Task 4 - Polymorphism--------------------
 
+// class User {
+//   constructor() {
+//     this._numberOfArticles = 0;
+//   }
+
+//   set numberOfArcitcles(numberOfArcitcles) {
+//     this._numberOfArcitcles = numberOfArcitcles;
+//   }
+
+//   get numberOfArcitcles() {
+//     return this._numberOfArcitcles;
+//   }
+//   calcScores() {}
+// }
+
+// class Author extends User {
+//   constructor() {
+//     super();
+//   }
+//   calcScores() {
+//     return this._numberOfArcitcles * 10 + 20;
+//   }
+// }
+
+// class Editor extends User {
+//   constructor() {
+//     super();
+//   }
+//   calcScores() {
+//     return this._numberOfArcitcles * 6 + 15;
+//   }
+// }
+
+// const author = new Author();
+// author.numberOfArcitcles = 8;
+// console.log(author.calcScores());
+
+// const editor = new Editor();
+// editor._numberOfArcitcles = 15;
+// console.log(editor.calcScores());
+
+// -----------------Coding Task 5 - Abstraction ----------------
+
 class User {
+  constructor() {}
+
+  set username(username) {
+    this._username = username;
+  }
+
+  get username() {
+    return this._username;
+  }
+  stateYourRole() {
+    throw new Error("Method cannot be called from here");
+  }
+}
+
+class Admin extends User {
   constructor() {
-    this._numberOfArticles = 0;
+    super();
   }
-
-  set numberOfArcitcles(numberOfArcitcles) {
-    this._numberOfArcitcles = numberOfArcitcles;
-  }
-
-  get numberOfArcitcles() {
-    return this._numberOfArcitcles;
-  }
-  calcScores() {}
-}
-
-class Author extends User {
-  calcScores() {
-    return this._numberOfArcitcles * 10 + 20;
+  stateYourRole() {
+    return "admin";
   }
 }
 
-class Editor extends User {
-  calcScores() {
-    return this._numberOfArcitcles * 6 + 15;
+class Viewer extends User {
+  constructor() {
+    super();
+  }
+  stateYourRole() {
+    return "viewer";
   }
 }
 
-const author = new Author();
-author.numberOfArcitcles = 8;
-console.log(author.calcScores());
+const admin = new Admin();
+admin.username = "Balthazar";
+console.log(admin.stateYourRole());
 
-const editor = new Editor();
-editor._numberOfArcitcles = 15;
-console.log(editor.calcScores());
+const viewer = new Viewer();
+viewer.username = "Melchior";
+console.log(viewer.stateYourRole());
