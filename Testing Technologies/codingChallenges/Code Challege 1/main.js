@@ -24,3 +24,5 @@ function mostExpensiveItem(arr) {
   });
   return expensiveProduct;
 }
+
+console.log(mostExpensiveItem(data));
