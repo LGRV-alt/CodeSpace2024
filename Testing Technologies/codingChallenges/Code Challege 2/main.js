@@ -46,28 +46,28 @@
 
 // -------Coding Task 3 - Inheritance (Subclass and Superclass)--------
 
-class User {
-  constructor(username) {
-    this._username = username;
-  }
+// class User {
+//   constructor(username) {
+//     this._username = username;
+//   }
 
-  set username(username) {
-    this._username = username;
-  }
-}
+//   set username(username) {
+//     this._username = username;
+//   }
+// }
 
-class Admin extends User {
-  expressYourRole() {
-    return "Admin";
-  }
-  sayHello() {
-    return `Hello admin, ${this._username}`;
-  }
-}
+// class Admin extends User {
+//   expressYourRole() {
+//     return "Admin";
+//   }
+//   sayHello() {
+//     return `Hello admin, ${this._username}`;
+//   }
+// }
 
-const admin = new Admin();
-admin.username = "Balthazar";
-console.log(admin.sayHello());
+// const admin = new Admin();
+// admin.username = "Balthazar";
+// console.log(admin.sayHello());
 
 // --------------Coding Task 4 - Polymorphism--------------------
 
@@ -115,7 +115,8 @@ console.log(admin.sayHello());
 // -----------------Coding Task 5 - Abstraction ----------------
 
 class User {
-  constructor() {}
+  constructor(
+  ) {}
 
   set username(username) {
     this._username = username;
@@ -146,6 +147,7 @@ class Viewer extends User {
     return "viewer";
   }
 }
+
 
 const admin = new Admin();
 admin.username = "Balthazar";
