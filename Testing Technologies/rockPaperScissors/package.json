@@ -1,0 +1,14 @@
+{
+  "name": "rockpaperscissors",
+  "version": "1.0.0",
+  "description": "rock paper scissors game",
+  "main": "myscripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.15.0"
+  }
+}
