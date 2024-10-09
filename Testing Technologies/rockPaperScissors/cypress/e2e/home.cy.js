@@ -37,11 +37,3 @@ describe("Scissors Button", () => {
     cy.get("#user-option").contains("Scissors");
   });
 });
-
-describe("Lose?", () => {
-  it("Click the scissors button and expect the output to be scissors", () => {
-    cy.visit("http://127.0.0.1:5500/");
-    cy.get("button").contains("Scissors").click();
-    cy.get("#user-option").contains("Scissors");
-  });
-});
