@@ -1,0 +1,36 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: black;
+  color: white;
+  padding: 2rem;
+}
+
+.challengeBlock {
+  border: solid white 2px;
+  width: 50%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.challengeBlock h2 {
+  padding-bottom: 1rem;
+}
+
+h1 {
+  padding-bottom: 2rem;
+}
+
+th {
+  border-bottom: solid white 2px;
+}
+td {
+  text-align: center;
+}
+
+table {
+  width: 100%;
+}
