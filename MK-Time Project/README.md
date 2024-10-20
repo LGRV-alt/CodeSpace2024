@@ -34,7 +34,7 @@ The user can navigate to the cart from the nav bar where the number value change
 ### Homepage
 
 Once logged in the admin has a similar homepage with some slight changes to show the are logged in as the admin, such as - Navbar has extra functions that can be carried out to maintain the current stock and the information stored within the database. The title also shows they are logged in as the admin.
-![Admin mainpage](https://github.com/LGRV-alt/CodeSpace2024/blob/main/MK-Time%20Project/Images/Admin-Page.png)
+![Admin mainpage](https://github.com/LGRV-alt/CodeSpace2024/blob/main/MK-Time%20Project/Images/Admin-Main.png)
 
 ### Create
 
