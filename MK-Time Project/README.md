@@ -35,3 +35,18 @@ The user can navigate to the cart from the nav bar where the number value change
 
 Once logged in the admin has a similar homepage with some slight changes to show the are logged in as the admin, such as - Navbar has extra functions that can be carried out to maintain the current stock and the information stored within the database. The title also shows they are logged in as the admin.
 ![Admin mainpage](https://github.com/LGRV-alt/CodeSpace2024/blob/main/MK-Time%20Project/Images/Admin-Page.png)
+
+### Create
+
+The admin can create new items from the page rather than using the database tools.
+![Admin mainpage](https://github.com/LGRV-alt/CodeSpace2024/blob/main/MK-Time%20Project/Images/Admin-Create.png)
+
+### Product
+
+When on the product page the admin can delete and update the records
+![Admin Product Page](https://github.com/LGRV-alt/CodeSpace2024/blob/main/MK-Time%20Project/Images/Admin-Product.png)
+
+### Update Product
+
+The products can be updated from the website, the current information is passed as a placeholder when on the update page, this allows the user to see the old information.
+![Admin Product Page](https://github.com/LGRV-alt/CodeSpace2024/blob/main/MK-Time%20Project/Images/Admin-Update.png)
