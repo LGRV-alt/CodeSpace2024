@@ -1,8 +1,6 @@
 describe("Test User Login Functions", () => {
   beforeEach(() => {
-    cy.visit(
-      "http://localhost/codeSpace-Challenges/CodeSpace-WebTech-Challenges/MK-Time/products.php"
-    );
+    cy.visit("http://localhost/MK-Time/products.php");
     cy.get("#inputEmail").click().type("Lewis@mail.com");
     cy.get("#inputPassword").click().type("Lewis");
     cy.get(".btn").click();
@@ -68,9 +66,7 @@ describe("Test User Login Functions", () => {
 
 describe("Test admin functions", () => {
   beforeEach(() => {
-    cy.visit(
-      "http://localhost/codeSpace-Challenges/CodeSpace-WebTech-Challenges/MK-Time/products.php"
-    );
+    cy.visit("http://localhost/MK-Time/products.php");
     cy.get("#inputEmail").click().type("Admin@mail.com");
     cy.get("#inputPassword").click().type("Admin");
     cy.get(".btn").click();
