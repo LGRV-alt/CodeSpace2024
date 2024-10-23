@@ -55,3 +55,10 @@ When on the product page the admin can delete and update the records
 
 The products can be updated from the website, the current information is passed as a placeholder when on the update page, this allows the user to see the old information.
 ![Admin Product Page](https://github.com/LGRV-alt/CodeSpace2024/blob/main/MK-Time%20Project/Images/Admin-Update.png)
+
+## MySQL database
+
+## Overview of tables
+
+This shows the database data when a simple order has been added to a cart and checked out
+![Database Page](https://github.com/LGRV-alt/CodeSpace2024/blob/main/MK-Time%20Project/Images/database.png)
