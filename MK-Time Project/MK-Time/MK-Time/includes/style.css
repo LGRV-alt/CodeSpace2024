@@ -1,0 +1,45 @@
+/* Nav Bar */
+.nav-title {
+  font-size: xx-large;
+  font-weight: 800;
+}
+
+/* Products Page */
+.page-banner {
+  background-color: aliceblue;
+}
+.header {
+  display: flex;
+  height: 100%;
+}
+
+.header-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.header-img {
+  width: 50%;
+}
+
+.header-img img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 700px) {
+  .header img {
+    background-color: red;
+  }
+  .header-info {
+    align-items: center;
+  }
+  .header-img {
+    width: 100%;
+  }
+  .header {
+    display: block;
+  }
+}
