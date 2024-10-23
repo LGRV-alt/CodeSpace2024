@@ -29,6 +29,11 @@ When clicking to view a product the user is redirected to a new page rendered ba
 The user can navigate to the cart from the nav bar where the number value changes based on the amount of items placed within the cart. From here the user would be able to check out their order, or empty the cart if they have changed their mind.
 ![Cart Page](https://github.com/LGRV-alt/CodeSpace2024/blob/main/MK-Time%20Project/Images/Cart-Page.png)
 
+### Checkout
+
+Once the order is complete the user can click the checkout button, this stores the order number and total in the database and asigns all the items in the order a place in the order_content table in the database
+![Checkout Page](https://github.com/LGRV-alt/CodeSpace2024/blob/main/MK-Time%20Project/Images/checkout.png)
+
 ## Admin Pages
 
 ### Homepage
