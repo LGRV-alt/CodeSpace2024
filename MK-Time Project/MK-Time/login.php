@@ -18,8 +18,8 @@ if (isset($_SESSION['loggedin'])) {
             <input data-cy="email-input" type="email" id="inputEmail" name="email" class="form-control mb-3"
                 placeholder="Email address" required="" autofocus="" />
             <label for="inputPassword" class="sr-only">Password</label>
-            <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password"
-                required="" />
+            <input data-cy="password-input" type="password" name="password" id="inputPassword" class="form-control"
+                placeholder="Password" required="" />
             <button class="btn btn-lg btn-primary btn-block mt-3" type="submit">
                 Sign in
             </button>

@@ -53,7 +53,7 @@ if (isset($_SESSION['first_name']) && $_SESSION['first_name'] === "Admin"): ?>
                         <form action="cart.php" method="POST">
                             <input type="number" name="quantity" value="1" min="1" max="20" placeholder="Quantity" required>
                             <input type="hidden" name="item_id" value="<?= $product['item_id'] ?>">
-                            <input type="submit" value="Add To Cart">
+                            <input type="submit" name="add_to_cart" value="Add To Cart">
                         </form>
                         <!-- <p class="card-text"><small class="text-muted">INSERT - Quantity?</small></p> -->
                     </div>
