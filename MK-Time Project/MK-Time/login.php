@@ -15,8 +15,8 @@ if (isset($_SESSION['loggedin'])) {
                 echo "<span style='color:red;'>$_SESSION[errors]</span>";
             } ?>
             <label for="inputEmail" class="sr-only">Email address</label>
-            <input type="email" id="inputEmail" name="email" class="form-control mb-3" placeholder="Email address"
-                required="" autofocus="" />
+            <input data-cy="email-input" type="email" id="inputEmail" name="email" class="form-control mb-3"
+                placeholder="Email address" required="" autofocus="" />
             <label for="inputPassword" class="sr-only">Password</label>
             <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password"
                 required="" />
